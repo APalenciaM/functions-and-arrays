@@ -329,3 +329,24 @@ describe('Bonus Quest - greatestProduct', () => {
     expect(greatestProduct(matrix)).toBe(16);
   });
 });
+
+describe('Bonus Bonus - Product of diagonals', () => {
+  it('should declare a function named greatestProductOfDiagonals', () => {
+    expect(typeof greatestProductOfDiagonals).toBe('function');
+  });
+
+  it('should return null if receives an empty array when called', () => {
+    expect(greatestProductOfDiagonals([])).toBe(null);
+  });
+
+  it('should return 90 when a', () => {
+    let matrix = [
+      [1, 3, 4, 2],
+      [4, 5, 3, 5],
+      [5, 2, 6, 4],
+      [8, 2, 9, 3]
+   ];
+    expect(greatestProductOfDiagonals(matrix)).toBe(90);
+  });
+
+});
